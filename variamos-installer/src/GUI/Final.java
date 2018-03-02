@@ -75,11 +75,13 @@ public class Final extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel3.setText("Create a desktop icon");
 
+        accesoDirecto.setSelected(true);
         accesoDirecto.setText("Yes");
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel1.setText("Launch VariaMos");
 
+        ejecutarVariamos.setSelected(true);
         ejecutarVariamos.setText("Yes");
 
         finalizarBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N

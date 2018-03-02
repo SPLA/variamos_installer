@@ -99,6 +99,7 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="accesoDirecto">
       <Properties>
+        <Property name="selected" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Yes"/>
       </Properties>
     </Component>
@@ -112,6 +113,7 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="ejecutarVariamos">
       <Properties>
+        <Property name="selected" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Yes"/>
       </Properties>
     </Component>

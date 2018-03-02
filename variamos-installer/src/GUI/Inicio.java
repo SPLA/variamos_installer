@@ -1,5 +1,6 @@
 package GUI;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -20,6 +21,8 @@ public class Inicio extends javax.swing.JFrame {
         this.setTitle("VariaMos Installer");
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+        this.setBackground(Color.RED);
+        
         
         cancelBtn.addActionListener(new ActionListener() {
             @Override
@@ -68,7 +71,8 @@ public class Inicio extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(0, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 0));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         variamosTitle.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         variamosTitle.setText("VariaMos Installer");

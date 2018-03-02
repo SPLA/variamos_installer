@@ -18,10 +18,10 @@ import variamos.utility.Installer;
  */
 public class GUIInstallerController {
     
-    private Configuration configuracion;
-    private variamos.utility.Installer instalador;
-    private String rutaVariaMos;
-    private Object[] acept = {"OK"};
+    private final Configuration configuracion;
+    private final variamos.utility.Installer instalador;
+    private final String rutaVariaMos;
+    private final Object[] acept = {"OK"};
     
     public GUIInstallerController(String rutaVariaMos) {
         configuracion = new Configuration();

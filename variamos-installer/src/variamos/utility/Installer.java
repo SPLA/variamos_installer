@@ -25,7 +25,7 @@ public class Installer {
         System.out.println("Descargando VariaMos " + configuratcion + "...");
         try {
             URL newUrl = new URL(url);
-            
+           
             Path targetPath = new File(ruta + "/Variamos/variamos_pre-file.jar").toPath();
             
             Files.copy(newUrl.openStream(), targetPath, StandardCopyOption.REPLACE_EXISTING);
