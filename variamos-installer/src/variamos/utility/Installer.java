@@ -13,6 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.util.Arrays;
 
 /**
  *
@@ -105,7 +106,8 @@ public class Installer {
     public boolean instalarSolver(String sistemaOperativo, String nombreSolver, String sudoPass) throws IOException, InterruptedException {
         Process process = null;
         if (sistemaOperativo.contains("Windows")) {
-            String[] cmd = {"cmd", "/c", System.getProperty("user.dir") + "\\" + nombreSolver + "\""};
+            String[] cmd = {"cmd", "/c", "\"" +  new File("").getAbsolutePath()+ "\\" + nombreSolver + "\" "};
+            System.out.println(Arrays.toString(cmd));
             process = Runtime.getRuntime().exec(cmd);
             process.waitFor();
         } else if (sistemaOperativo.contains("Linux")) {
